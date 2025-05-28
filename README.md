@@ -16,7 +16,7 @@ The deduplication follows a defined set of rules:
 - **Jackson 2.15.2** - For JSON parsing (ObjectMapper, JavaTimeModule)
 - **JUnit 5** - Unit testing framework
 - **Maven** - Build and dependency management
-- 
+  
 ## Project Setup, Installation & Running
 ### Prerequisites
 - JDK 17+
@@ -96,7 +96,7 @@ For complete technical details, algorithm explanation, input/output formats, and
 
 ## Algorithm Analysis: 
 
-Folloing document represents two methods for deduplicating lead data: a simple map-based approach and a more robust union-find-based method. It explains their logic, algorithms, pros and cons, and includes sample inputs to demonstrate how duplicates are detected and resolved.
+Following document represents two methods for deduplicating lead data: a simple map-based approach and a more robust union-find-based method. It explains their logic, algorithms, pros and cons, and includes sample inputs to demonstrate how duplicates are detected and resolved.
 
 - **Approach 1**: Simple Map-Based Deduplication (commented in LeadDuplicator.java)
 - **Approach 2**: Transitive Deduplication using Union-Find (Disjoint Set) (Implemented)
