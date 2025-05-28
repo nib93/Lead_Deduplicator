@@ -86,6 +86,20 @@ Leads missing or having null/empty \_id or email are considered **bad entries** 
   - Logging field-level differences
   - Transitive duplicate resolution
 
+## Design Specification
+
+For complete technical details, algorithm explanation, input/output formats, and assumptions, Classes and Methods details refer to the design PDF:
+
+**[Design_Document.pdf](./Design_Document.pdf)**
+
+## Algorithm Analysis: 
+
+Folloing document represents two methods for deduplicating lead data: a simple map-based approach and a more robust union-find-based method. It explains their logic, algorithms, pros and cons, and includes sample inputs to demonstrate how duplicates are detected and resolved.
+
+- **Approach 1**: Simple Map-Based Deduplication (commented in LeadDuplicator.java)
+- **Approach 2**: Transitive Deduplication using Union-Find (Disjoint Set) (Implemented)
+ **See full write-up, Comparision of the two approaches **: [`Dedup_Approaches__Analysis.pdf`](./Dedup_Approaches__Analysis.pdf)
+
 ## Installation and Setup Project
 
 **Steps**
