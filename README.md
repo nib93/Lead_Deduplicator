@@ -90,9 +90,11 @@ Leads missing or having null/empty \_id or email are considered **bad entries** 
 
 For complete technical details, algorithm explanation, input/output formats, and assumptions, Classes and Methods details refer to the design PDF:
 
-**[Design_Document.pdf](./Design_Document.pdf)**
+**[Design_Document.pdf](Design Document.pdf)**
+
 
 ## Algorithm Analysis: 
+
 
 Folloing document represents two methods for deduplicating lead data: a simple map-based approach and a more robust union-find-based method. It explains their logic, algorithms, pros and cons, and includes sample inputs to demonstrate how duplicates are detected and resolved.
 
