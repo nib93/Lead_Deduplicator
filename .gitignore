@@ -1,0 +1,39 @@
+# Maven target directory
+/target/
+
+# Logs
+*.log
+
+# IDE and editor-specific files
+*.iml
+.idea/
+*.class
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Compiled JARs/WARs
+*.jar
+*.war
+*.ear
+
+# IntelliJ project files
+*.ipr
+*.iws
+
+# Eclipse project files
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# Environment/Secrets
+.env
+
+# Generated files
+dedupedLeads.json
+changeLog.txt
+BadJson.json
