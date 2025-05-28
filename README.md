@@ -22,11 +22,12 @@ The deduplication follows a defined set of rules:
 - JDK 17+
 - Maven 3.8+
 ## **Input:** 
-`	`The tool accepts a single JSON file input containing an array of Lead entries, specified as a command line argument when running the program.
+The tool accepts a single JSON file input containing an array of Lead entries, specified as a command line argument when running the program.
 
 There are two examples input files:
 
 **leads.json** *(src/main/resources/data/leads.json)*— Contains well-formed leads with no missing or null required fields.
+
 **leadsModified.json** *(src/main/resources/data/leadsModified.json)* — Contains leads with some missing, null, or empty fields, including invalid leads.
 
 Each lead contains:
@@ -45,7 +46,7 @@ Leads missing or having null/empty \_id or email are considered **bad entries** 
 - **changeLog.txt** *(src/main/resources/data/changeLog.txt):* Field-level differences for merged leads. It has Human-readable text describing all field-level changes due to deduplication.
 - **BadJson.json** *(src/main/resources/data/BadJson.json):* Leads missing required fields (\_id or email). It has Contains leads with some missing, null, or empty fields, including invalid leads.
 ## **Assumptions:** 
-`  `**leads.json :** 
+**leads.json :** 
 
 - All records are identically structured and structurally valid JSON objects.
 - Each record contains **all six expected fields**: \_id, email, firstName, lastName, address, entryDate
@@ -100,7 +101,7 @@ Following document represents two methods for deduplicating lead data: a simple 
 
 - **Approach 1**: Simple Map-Based Deduplication (commented in LeadDuplicator.java)
 - **Approach 2**: Transitive Deduplication using Union-Find (Disjoint Set) (Implemented)
- **See full write-up, Comparision of the two approaches in Detail **: [Dedup Approaches  Analysis.pdf] (https://github.com/user-attachments/files/20472026/Dedup.Approaches.Analysis.pdf)
+ **See full write-up, Comparision of the two approaches in Detail **: [Dedup Approaches Analysis.pdf] (https://github.com/user-attachments/files/20472026/Dedup.Approaches.Analysis.pdf)
 
 
 ## Installation and Setup Project
